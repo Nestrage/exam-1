@@ -89,12 +89,58 @@ h6 {
 
 body {
   font-family: "JosefinSans", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.container--why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container--booking2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container--what {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.789);
+}
+
+.container--direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 337px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .hone {
   font-size: 48px;
   color: white;
   text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
 }
 
 .htwo {
@@ -103,9 +149,38 @@ body {
   padding-bottom: 65px;
 }
 
+.htwo--what {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hthree {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hthree--what {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
 .hfour {
   color: white;
   font-size: 22px;
+  letter-spacing: 5px;
+  font-weight: 200;
+}
+
+.hfive {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .text {
@@ -124,18 +199,43 @@ body {
   padding-left: 35px;
   padding-right: 35px;
   font-size: 16px;
+  margin-top: 20px;
 }
 
 .btn__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #5474fd;
   color: white;
   border: solid 2px white;
-  line-height: 60px;
-  padding-left: 30px;
-  padding-right: 20px;
+  text-transform: uppercase;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  width: 140px;
+  height: 60px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn__header:hover {
+  background-color: #339af0;
+}
+
+.btn--text {
+  margin-right: 35px;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .name__header {
@@ -150,8 +250,10 @@ body {
 
 .name__footer {
   font-size: 24px;
-  color: white;
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .header {
@@ -199,6 +301,9 @@ body {
 
 .header__form--input {
   width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: grey;
 }
 
 .scroll_down {
@@ -215,6 +320,15 @@ body {
   max-width: 100px;
   margin: 110px auto 0;
   padding: 20px 0;
+}
+
+.scroll_down__a {
+  text-decoration: none;
+}
+
+.scroll_down__a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .scroll_down__text {
@@ -235,6 +349,7 @@ body {
 }
 
 .header__nav--a {
+  font-family: "Aleo", serif;
   float: right;
   display: block;
   color: #f2f2f2;
@@ -266,10 +381,24 @@ body {
           justify-content: center;
 }
 
-.why__text {
+.portrait {
   max-width: 540px;
   margin-right: 15px;
   padding-top: 15%;
+}
+
+.portrait__paragraph {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  line-height: 25px;
+}
+
+.portrait__paragraph--p2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .why__images {
@@ -290,9 +419,161 @@ body {
   margin-top: 5px;
 }
 
-.what {
-  height: 80vh;
-  background-image: url(../img/whatbg.jpg);
+.direction {
+  background-color: #333333;
+  height: 30vh;
+}
+
+.direction__item {
+  text-align: center;
+}
+
+.direction__item--title {
+  color: white;
+  font-family: "Aleo", serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.doted-line {
+  position: absolute;
+  width: 320px;
+  height: 110px;
+  border-radius: 300px/105px;
+  opacity: 0.5;
+  border-top: 2px dotted white;
+}
+
+.doted-line--l {
+  left: 207px;
+  top: 45px;
+}
+
+.doted-line--r {
+  right: 207px;
+  top: 45px;
+}
+
+.booking__1 {
+  min-height: 100vh;
+  background-image: url(../img/booking1bg.jpg);
   background-size: cover;
+  padding-top: 320px;
+}
+
+.booking__2 {
+  min-height: 100vh;
+  background-image: url(../img/booking2bg.jpg);
+  background-size: cover;
+  padding-top: 320px;
+}
+
+.booking__content {
+  max-width: 540px;
+  min-height: 350px;
+  padding: 35px 25px;
+  background-color: rgba(0, 0, 0, 0.789);
+}
+
+.booking__text {
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.what {
+  min-height: 100vh;
+  background: url(../img/whatbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+
+.what__title {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+
+.what__text {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.what__text--review {
+  padding-left: 30px;
+}
+
+.what__card {
+  background-color: #333333;
+  padding: 60px;
+}
+
+.quote {
+  color: #5474fd;
+  font-size: 22px;
+}
+
+.footer {
+  background-color: #232323;
+  height: 30vh;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.footer__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.footer__social {
+  padding-top: 30px;
+}
+
+.footer__social a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer__social a:nth-child(1):hover {
+  color: #3b5998;
+}
+
+.footer__social a:nth-child(2):hover {
+  color: #1da1f2;
+}
+
+.footer__social a:nth-child(3):hover {
+  color: #0e76a8;
+}
+
+.footer__social a:nth-child(4):hover {
+  color: #ff0000;
+}
+
+.footer__social a:nth-child(5):hover {
+  color: #c8232c;
+}
+
+.social {
+  color: white;
+  margin: 10px;
 }
 /*# sourceMappingURL=main.css.map */

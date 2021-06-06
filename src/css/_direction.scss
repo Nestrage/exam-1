@@ -1,0 +1,33 @@
+.direction {
+  background-color: #333333;
+  height: 30vh;
+}
+.direction__item {
+  text-align: center;
+
+  &--title {
+    color: white;
+    font-family: "Aleo", serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+.doted-line {
+  position: absolute;
+  width: 320px;
+  height: 110px;
+  border-radius: 300px/105px;
+  opacity: 0.5;
+  border-top: 2px dotted white;
+
+  &--l {
+    left: 207px;
+    top: 45px;
+  }
+
+  &--r {
+    right: 207px;
+    top: 45px;
+  }
+}

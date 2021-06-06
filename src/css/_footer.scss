@@ -1,0 +1,43 @@
+.footer {
+  background-color: #232323;
+  height: 30vh;
+  text-align: center;
+  padding-top: 120px;
+
+  &__text {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  &__social {
+    padding-top: 30px;
+    a {
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+      transition: color 0.2s;
+    }
+    a:nth-child(1):hover {
+      color: #3b5998;
+    }
+    a:nth-child(2):hover {
+      color: #1da1f2;
+    }
+    a:nth-child(3):hover {
+      color: #0e76a8;
+    }
+    a:nth-child(4):hover {
+      color: #ff0000;
+    }
+    a:nth-child(5):hover {
+      color: #c8232c;
+    }
+  }
+}
+.social {
+  color: white;
+  margin: 10px;
+}

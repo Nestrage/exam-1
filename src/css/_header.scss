@@ -26,6 +26,9 @@
 }
 .header__form--input {
   width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: grey;
 }
 .scroll_down {
   display: flex;
@@ -35,6 +38,12 @@
   margin: 110px auto 0;
 
   padding: 20px 0;
+}
+.scroll_down__a {
+  text-decoration: none;
+}
+.scroll_down__a:hover {
+  transform: scale(1.2);
 }
 .scroll_down__text {
   color: white;
@@ -51,6 +60,7 @@
   display: flex;
 }
 .header__nav--a {
+  font-family: "Aleo", serif;
   float: right;
   display: block;
   color: #f2f2f2;
